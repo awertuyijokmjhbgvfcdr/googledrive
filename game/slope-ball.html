@@ -1,0 +1,390 @@
+<title>Google Drive</title>
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav>
+	 <h1>Shopp!</h1>
+        <ul>
+            <li class="active">
+                <a href="/index">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="/games">
+                    <span class="icon"><i class="fa-solid fa-gamepad"></i></span>
+                    <span class="title">Games</span>
+                </a>
+            </li>
+            <li>  
+                <a href="/movies">
+                    <span class="icon"><i class="fa-solid fa-film"></i></span>
+                    <span class="title">Movies</span>
+                </a>
+            </li>
+            <li>
+                <a href="/chat">
+                    <span class="icon"><i class="fa-solid fa-comment"></i></span>
+                    <span class="title">Chat</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/awertuyijokmjhbgvfcdr/googledrive">
+                    <span class="icon"><i class="fa fa-github"></i></span>
+                    <span class="title">Fork On Github</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+<aside>
+	
+	
+	<div id="new">
+		<h3>Trending</h3>
+		<div class="bag">
+			<i class="fa-solid fa-mobile-retro"></i>
+			Phone
+		</div>
+		<div class="bag">
+			<i class="fa-solid fa-microphone-lines"></i> Mic
+		</div>
+		<div class="bag">
+			<i class="fa-solid fa-headphones-simple"></i> Headphones
+		</div>
+		<div class="bag">
+			<i class="fa-solid fa-tv"></i> TV
+	</div>
+	</div>
+	<div id="bag">
+		<h3>Your Bag</h3>
+		<div class="bag">
+			<i class="fa-solid fa-mobile-retro"></i>
+			Phone
+		</div>
+		<div class="bag">
+			<i class="fa-solid fa-microphone-lines"></i> Mic
+		</div>
+		<div class="bag">
+			<i class="fa-solid fa-headphones-simple"></i> Headphones
+		</div>
+		<div class="bag">
+			<i class="fa-solid fa-tv"></i> TV
+		</div>
+	</div>
+</aside>
+
+<div class="toggle">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-times"></i>
+    </div>
+
+
+
+
+<style>
+
+iframe{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:70%;
+  height:90%;
+  border-radius:15px;
+  
+  
+  
+  }
+  
+.button-22{
+  
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  }
+  
+
+</style>
+  <iframe src="https://tinyurl.com/2p8puf3f" frameborder="0" id="gameframe"></iframe>
+  
+  
+  
+  
+<button onclick="openFullscreen();" class="button-22" role="button">Fullscreen</button>
+
+
+<script>
+var elem = document.getElementById("gameframe");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+
+
+
+
+
+
+<style>
+
+
+
+
+
+.button-22 {
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-22:active {
+  background-color: #006AE8;
+}
+
+.button-22:hover {
+  background-color: #1C84FF;
+}
+
+</style>
+
+
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;500;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Onset", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color:#d8d8d8;
+  background-size: cover;
+}
+nav {
+  --bg: #ffffffaa;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: calc(100vh - 80px);
+  width: 300px;
+  background-color: var(--bg);
+  box-sizing: initial;
+  transition: width 0.5s;
+  overflow-x: hidden;
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+	z-index:100;
+	padding:0 5px;
+	padding-top:40px;
+}
+nav>h1{
+	display:none;
+	font-weight:900;
+	font-size:2rem;
+	margin-left:20px;
+	margin-bottom:50px;
+}
+nav:not(.active) + aside{
+		width:300px;
+	opacity:1;
+}
+nav + aside{
+	position:fixed;
+	top:40px;
+		opacity:0;
+	left:330px;
+	background-color:#ffffff88;
+	 height: calc(100vh - 80px);
+	  backdrop-filter: blur(5px);
+/* 	width:0; */
+		transition:opacity 0.3s;
+	overflow:hidden;
+	padding:40px;
+	border-radius:0 1rem 1rem 0;
+}
+aside h3{
+	font-size:1.5rem;
+	font-weight:900;
+	margin-bottom:30px;
+}
+#shop, #bag, #new{
+	display:none;
+}
+nav:has(li:nth-of-type(1).active)+aside, nav:has(li:nth-of-type(5).active)+aside{
+	opacity:0;
+}
+nav:has(li:nth-of-type(2).active)+aside #shop{
+	display:block;
+}
+nav:has(li:nth-of-type(3).active)+aside #new{
+	display:block;
+}
+nav:has(li:nth-of-type(4).active)+aside #bag{
+	display:block;
+}
+
+.bag{
+	padding: 20px 15px;
+	color:#00406b;
+	border-radius:1rem;
+	margin:15px 0;
+	cursor:pointer;
+	transition:0.3s;
+}
+.bag:hover{
+	color:#333;
+	background-color:#fff;
+}
+.bag>i {
+	font-size:1.3rem;
+	margin-right:20px;
+}
+nav.active {
+  width: 70px;
+}
+nav ul {
+  position: absoulte;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav ul li {
+  position: relative;
+  list-style: none;
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 95%;
+  transition: 0.3s;
+}
+nav ul li.active {
+  background-color: #fff;
+  border-radius: 20px;
+}
+nav.active ul li.active {
+  width: 95%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+nav ul li a {
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: #00406b;
+  align-items: center;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #003559;
+}
+nav ul li.active a {
+  color: #333;
+}
+nav ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  /* height:60px; */
+  text-align: center;
+}
+.icon i {
+  font-size: 1.5em;
+}
+.title {
+  position: relative;
+  padding-left: 15px;
+}
+.toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffffaa;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle i {
+  position: absolute;
+  color: #00406b;
+  font-size: 30px;
+  display: none;
+}
+.toggle i:nth-of-type(2) {
+  display: block;
+}
+.toggle.active i:nth-of-type(2) {
+  display: none;
+}
+.toggle.active i:nth-of-type(1) {
+  display: block;
+}
+
+</style>
+
+
+
+<script>const list = document.querySelectorAll('nav ul li');
+const menuToggle = document.querySelector('.toggle');
+const nav = document.querySelector('nav');
+const pageMask = document.querySelector('#page-mask')
+const body = document.body;
+
+menuToggle.addEventListener('click',()=>{
+    menuToggle.classList.toggle('active');
+    nav.classList.toggle('active');
+    if(!nav.classList.contains('active')){
+        body.classList.add('nav-active');
+        pageMask.style.display = 'block';
+    }
+    else {
+        body.classList.remove('nav-active');
+    }
+})
+
+</script>
